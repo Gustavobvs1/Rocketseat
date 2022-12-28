@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap");
+
+* {
+  font-family: Spartan, Work Sans;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121214;
+  background-image: url("../assets/read_news.jpg");
+  background-repeat: no-repeat;
+  background-size: 55% 100vh;
+  background-position: top right;
+}
+
+h2 {
+  color: #04d361;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+h3 {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+p {
+  color: white;
+  font-weight: 400;
+  margin: 0;
+  font-size: 17px;
+}
+
+form {
+  margin: 50px 0 50px;
+}
+
+label {
+  color: #a8a8a8;
+  font-weight: bold;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 50px;
+  height: 40px;
+}
+
+#logo {
+  width: 389px;
+  height: 94px;
+}
+
+#text {
+  width: 600px;
+  margin-top: 50px;
+}
+
+#email {
+  margin: 0;
+  border-left: 5px solid #04d361;
+  height: 40px;
+  box-shadow: #121214 0 3px 3px 3px;
+}
+
+#send {
+  width: 50px;
+  height: 40px;
+  border: 10px solid #8257e5;
+  display: block;
+  box-shadow: #121214 0 3px 3px 3px;
+}
+
+#enviar-email {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 55% 5%;
+}
+
+#first {
+  color: #8257e5;
+}
+
+#seta {
+  width: 17px;
+  height: 17px;
+  position: relative;
+  top: 4px;
+  left: 3px;
+}
