@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: gray;
+}
+
+.cabecalho {
+  align-items: center;
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  background-color: lightslategray;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.cabecalho-menu-items:last-child {
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  padding: 2px;
+}
+
+.coluna {
+  display: flex;
+  gap: 1rem;
+  margin: 40px 20px;
+}
+
+.coluna-direita,
+.coluna-esquerda {
+  border: 1px solid black;
+  height: 100px;
+}
+
+.coluna-esquerda {
+  flex-basis: 25%;
+}
+
+.coluna-direita {
+  flex: 2;
+}
+
+.galeria {
+  border-top: 1px solid black;
+  padding-top: 30px;
+}
+
+.galeria-titulo {
+  text-align: center;
+}
+
+.galeria-imagens {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.galeria-imagens-items {
+  width: 30%;
+  height: auto;
+}
+
+.botoes {
+  border-top: 1px solid black;
+  padding-top: 30px;
+}
+
+.botoes-titulo {
+  text-align: center;
+}
+
+.botoes-menu {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  gap: 2rem;
+}
+
+.botoes-esquerda,
+.botoes-direita {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  padding: 3px;
+  gap: 0.4rem;
+  flex-basis: 55px;
+  height: 30px;
+}
+
+.botoes-esquerda img,
+.botoes-direita img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  background-color: lightslategray;
+  height: 8rem;
+  align-items: center;
+}
