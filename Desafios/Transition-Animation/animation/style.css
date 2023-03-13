@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ball {
+  background: red;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin: 50px;
+  animation-name: changeBall;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 4s;
+  animation-direction: alternate;
+}
+
+@keyframes changeColor {
+  from {
+    background-color: rgb(217, 255, 0);
+  }
+  to {
+    background-color: blueviolet;
+  }
+}
+
+@keyframes changeBall {
+  0% {
+    background-color: rgb(217, 255, 0);
+    left: 0;
+    top: 0;
+  }
+  20% {
+    background-color: aqua;
+    left: 250px;
+    top: 0;
+  }
+
+  40% {
+    background-color: blueviolet;
+    top: 0;
+    left: 500px;
+  }
+
+  60% {
+    background-color: orange;
+    left: 750px;
+    top: 0;
+  }
+
+  80% {
+    background-color: green;
+    left: 1000px;
+    top: 0;
+  }
+
+  100% {
+    left: 0;
+    top: 0;
+    background-color: red;
+  }
+}
