@@ -12,6 +12,7 @@ import rocketseat.com.passin.services.CheckInService;
 @RestController
 @RequestMapping("/attendees")
 @RequiredArgsConstructor
+@CrossOrigin
 
 public class AttendeeController {
     private final AttendeeService attendeeService;

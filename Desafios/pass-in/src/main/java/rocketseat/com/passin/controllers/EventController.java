@@ -16,6 +16,8 @@ import rocketseat.com.passin.services.EventService;
 @RestController
 @RequestMapping("/events")
 @RequiredArgsConstructor
+@CrossOrigin
+
 public class EventController {
 
     private final EventService eventService;
