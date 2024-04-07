@@ -1,0 +1,31 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "NLW-4",
+    "details": "Vai ser daora",
+    "maximumAttendees": 1
+}
+
+###
+POST http://localhost:3333/events/2c9b5137-9417-4c3c-8d78-f1f357d85c99/attendees
+Content-Type: application/json
+
+{
+    "name": "Paulo",
+    "email": "marilene@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/e6adc789-b273-464a-aafd-9a563b5a276
+
+
+###
+GET http://localhost:3333/attendees/10/badge
+
+###
+GET http://localhost:3333/attendees/2/check-in
+
+###
+GET http://localhost:3333/events/7dc18edc-71da-41be-bb18-b6234da091cc/attendees
