@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch src/server.ts",
-    "studio": "npx prisma studio"
+    "studio": "npx prisma studio",
+    "start": "tsx src/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -30,3 +31,4 @@
     "zod": "^3.23.8"
   }
 }
+
