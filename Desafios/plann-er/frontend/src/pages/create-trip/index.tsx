@@ -87,6 +87,9 @@ export function CreateTripPage() {
       owner_email: ownerEmail,
     });
 
+    console.log(eventStartAndEndDates.from);
+    console.log(eventStartAndEndDates.to);
+
     const { tripId } = response.data;
 
     navigate(`/trips/${tripId}`);

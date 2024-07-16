@@ -1,4 +1,3 @@
-import cors from "@fastify/cors";
 import fastify from "fastify";
 import {
   serializerCompiler,
@@ -21,13 +20,14 @@ import { errorHandler } from "./error-handler";
 import { env } from "./env";
 import fastifySwagger from "@fastify/swagger";
 import fastifySwaggerUi from "@fastify/swagger-ui";
+import fastifyCors from "@fastify/cors";
 
 const app = fastify();
 
 app.setValidatorCompiler(validatorCompiler);
 app.setSerializerCompiler(serializerCompiler);
 
-app.register(cors, {
+app.register(fastifyCors, {
   origin: "*",
 });
 
@@ -71,6 +71,6 @@ app.register(getParticipants);
 app.register(getParticipant);
 app.register(createInvite);
 
-app.listen({ port: env.PORT }).then(() => {
+app.listen({ port: env.PORT, host: "0.0.0.0" }).then(() => {
   console.log(`listening on port ${env.PORT}`);
 });
