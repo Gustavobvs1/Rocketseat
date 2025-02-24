@@ -1,0 +1,28 @@
+POST http://localhost:3333/subscriptions
+Content-Type: application/json
+
+{
+    "name": "ples",
+    "email": "marilene533@gmail.com",
+    "referrerId": "53a4a9d8-dcf5-4388-be4e-787e5cdc8ef2"
+}
+
+###
+
+GET http://localhost:3333/invites/fa0a6500-7cc3-4a31-9ad8-bb06ed0457e5
+
+###
+
+GET http://localhost:3333/subscribers/fa0a6500-7cc3-4a31-9ad8-bb06ed0457e5/ranking/clicks
+
+###
+
+GET http://localhost:3333/subscribers/fa0a6500-7cc3-4a31-9ad8-bb06ed0457e5/ranking/count
+
+###
+
+GET http://localhost:3333/subscribers/fa0a6500-7cc3-4a31-9ad8-bb06ed0457e5/ranking/position
+
+###
+
+GET http://localhost:3333/ranking
